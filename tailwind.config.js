@@ -10,6 +10,7 @@ module.exports = {
         Regular: ["FontRegular"],
         Medium: ["FontMedium"],
         Bold: ["FontBold"],
+        ExtraBold: ["FontExtraBold"],
       },
       borderRadius: {
         "4xl": "40px",

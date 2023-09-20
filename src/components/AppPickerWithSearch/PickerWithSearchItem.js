@@ -13,9 +13,7 @@ function PickerWithSearchItem({ item, onPress }) {
       onPress={onPress}
       className="px-5 py-[14px] mb-1"
     >
-      <AppText className="text-[18px] leading-[26px] tracking-[-0.24px]">
-        {item?.name}
-      </AppText>
+      <AppText className="text-[18px] leading-[26px]">{item?.name}</AppText>
     </TouchableHighlight>
   );
 }

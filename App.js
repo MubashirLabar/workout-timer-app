@@ -12,7 +12,7 @@ export default function App() {
     FontRegular: require("./src/assets/fonts/TTNorms-Regular.otf"),
     FontMedium: require("./src/assets/fonts/TTNorms-Medium.otf"),
     FontBold: require("./src/assets/fonts/TTNorms-Bold.otf"),
-    FontBold: require("./src/assets/fonts/TTNorms-ExtraBold.otf"),
+    FontExtraBold: require("./src/assets/fonts/TTNorms-ExtraBold.otf"),
   });
 
   if (!loadedFonts) {

@@ -24,7 +24,7 @@ const AppButton = ({
 
   return (
     <TouchableOpacity
-      className={`w-full h-[58px] flex flex-row items-center justify-center py-[10px] border-[1px] border-primary-700 rounded-[16px] ${_style} ${className}`}
+      className={`w-full h-[56px] flex flex-row items-center justify-center py-[10px] border-[1px] border-transparent rounded-[50px] ${_style} ${className}`}
       disabled={isLoading}
       {...rest}
     >
@@ -32,7 +32,7 @@ const AppButton = ({
         <ActivityIndicator size="small" color="white" />
       ) : (
         <Text
-          className={`font-SemiBold text-service-700 text-[16px] leading-[19px] tracking-[-0.24px] ${_textStyle} ${labelStyle}`}
+          className={`font-Medium text-white text-[18px] leading-[24px] tracking-[0.5px] ${_textStyle} ${labelStyle}`}
         >
           {label}
         </Text>

@@ -35,9 +35,7 @@ function AppTag({ label = "Status", type = "info", tagStyle }) {
     <View
       className={`py-[6px] px-[10px] rounded-[6px] flex justify-center items-center bg-transparent border-solid border-[1px] ${tagStyle} ${tagBorderColor}`}
     >
-      <Text
-        className={`font-SemiBold text-[13px] leading-[15px] tracking-[-0.24px] ${textColor}`}
-      >
+      <Text className={`font-SemiBold text-[13px] leading-[15px] ${textColor}`}>
         {label}
       </Text>
     </View>
