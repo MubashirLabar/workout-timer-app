@@ -4,8 +4,6 @@ import Toast, { SuccessToast, ErrorToast } from "react-native-toast-message";
 import RootNavigation from "./src/navigation/RootNavigation";
 import colors from "./src/style/colors";
 
-// TODO: Replace expo-zeezsoft app name with your app name
-
 export default function App() {
   const [loadedFonts] = useFonts({
     FontLight: require("./src/assets/fonts/TTNorms-Light.otf"),

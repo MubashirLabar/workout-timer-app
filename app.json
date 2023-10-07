@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "expo-zeezsoft",
-    "slug": "expo-zeezsoft",
+    "name": "workout-timer",
+    "slug": "workout-timer",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./src/assets/icon.png",
@@ -17,12 +17,18 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./src/assets/adaptive-icon.png",
+        "foregroundImage": "./src/assets/icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.zeezsoft.workouttimer"
     },
     "web": {
-      "favicon": "./src/assets/favicon.png"
+      "favicon": "./src/assets/icon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d9813d64-4fcf-41ca-9a7a-e7faac6ae425"
+      }
     }
   }
 }

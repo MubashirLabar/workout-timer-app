@@ -3309,6 +3309,11 @@ expo-asset@~8.9.1:
     path-browserify "^1.0.0"
     url-parse "^1.5.9"
 
+expo-av@~13.2.1:
+  version "13.2.1"
+  resolved "https://registry.yarnpkg.com/expo-av/-/expo-av-13.2.1.tgz#ce502a4c5d4a57962fd9f5f1a40c76c39c88f5ee"
+  integrity sha512-mC0mYSzaOaZgXjzhW2l4Ag325JjH6q5IbptfwD7gkMOFYy7VPOMxEMUnetadbs3DDzmgE6vUWrTjUIUbwq59qg==
+
 expo-constants@~14.2.1:
   version "14.2.1"
   resolved "https://registry.yarnpkg.com/expo-constants/-/expo-constants-14.2.1.tgz#b5b6b8079d2082c31ccf2cbc7cf97a0e83c229c3"
@@ -3345,6 +3350,11 @@ expo-font@~11.1.1:
   integrity sha512-X+aICqYY69hiiDDtcNrjq8KutHrH2TrHuMqk0Rfq0P7hF6hMd+YefwLBNkvIrqrgmTAuqiLjMUwj2rHLqmgluw==
   dependencies:
     fontfaceobserver "^2.1.0"
+
+expo-keep-awake@^12.5.0:
+  version "12.5.0"
+  resolved "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-12.5.0.tgz#39f2728b378d65741008967be70f5171dbd6b6d3"
+  integrity sha512-rSmO0auHuT9YkRdKfYIdJrtXRKO0uaHNxfQx7+DTY6YTFWTrrhnQDD3aRRqvOabfpq9WBNy5u+wdNEHRdrCzDw==
 
 expo-keep-awake@~12.0.1:
   version "12.0.1"

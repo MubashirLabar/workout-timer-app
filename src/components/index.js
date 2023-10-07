@@ -5,3 +5,5 @@ export { default as TextField } from "./TextField";
 export { default as AppPickerWithSearch } from "./AppPickerWithSearch";
 export { default as ListItemSeparator } from "./ListItemSeparator";
 export { default as TimerField } from "./TimerField";
+export { default as CounterField } from "./CounterField";
+export { default as SoundManager } from "./SoundManager";

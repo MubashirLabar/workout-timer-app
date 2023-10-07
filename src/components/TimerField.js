@@ -1,6 +1,7 @@
 import { View, TextInput } from "react-native";
 import Icon from "react-native-vector-icons/AntDesign";
-import { AppText, Touchable } from "components";
+import AppText from "./AppText";
+import Touchable from "./Touchable";
 import colors from "../style/colors";
 
 export default function TimerField({
@@ -47,10 +48,10 @@ export default function TimerField({
   return (
     <View className="w-full flex flex-row items-center">
       <Touchable
-        className="h-10 w-10 items-center justify-center border-solid border-[1px] border-black-700 rounded-full"
+        className="h-11 w-11 items-center justify-center border-solid border-[1px] border-black-700 rounded-full"
         onPress={handleMinusButton}
       >
-        <Icon name="minus" size={24} color={colors.black[700]} />
+        <Icon name="minus" size={26} color={colors.black[700]} />
       </Touchable>
       <View className="flex-1 flex-row justify-center items-center">
         <TextInput
@@ -77,10 +78,10 @@ export default function TimerField({
       </View>
 
       <Touchable
-        className="h-10 w-10 items-center justify-center border-solid border-[1px] border-black-700 rounded-full"
+        className="h-11 w-11 items-center justify-center border-solid border-[1px] border-black-700 rounded-full"
         onPress={handleAddButton}
       >
-        <Icon name="plus" size={24} color={colors.black[700]} />
+        <Icon name="plus" size={26} color={colors.black[700]} />
       </Touchable>
     </View>
   );
