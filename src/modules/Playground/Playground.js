@@ -86,6 +86,9 @@ function Playground() {
           setSets={setSets}
           totalCounter={totalCounter}
           restCounter={restCounter}
+          restSeconds={restSeconds}
+          restMinutes={restMinutes}
+          restartCounter={restartCounter}
         />
       ) : (
         <CreatePreset

@@ -15,21 +15,25 @@ export default function Timer({
   setIsRest,
   totalCounter,
   restCounter,
+  restSeconds,
+  restMinutes,
+  restartCounter,
 }) {
   const [isPaused, setIsPaused] = useState(false);
   const [playSound, setPlaySound] = useState(false);
 
   useEffect(() => {
     let timer;
-    let _seconds = parseInt(seconds);
-    let _minutes = parseInt(minutes);
+    let _seconds = seconds ? parseInt(seconds) : 0;
+    let _minutes = minutes ? parseInt(minutes) : 0;
+    let _restSeconds = restSeconds ? parseInt(restSeconds) : 0;
+    let _restMinutes = restMinutes ? parseInt(restMinutes) : 0;
     let _sets = parseInt(sets);
-
     if (!isPaused) {
       if (_minutes >= 0 || _seconds > 0) {
         timer = setInterval(() => {
           setPlaySound(false);
-          if ((_minutes === 0 || isNaN(_minutes)) && _seconds <= 4) {
+          if (_minutes === 0 && _seconds <= 4) {
             setPlaySound(true);
           }
 
@@ -40,10 +44,12 @@ export default function Timer({
             setSeconds(59);
           }
         }, 1000);
-      } else if (_sets > 1) {
-        // setSets((_sets - 1).toString());
+      } else if (_sets > 1 && (_restMinutes > 0 || _restSeconds > 0)) {
         setIsRest(true);
         setPlaying(false);
+      } else if (_sets > 1 && !_restMinutes > 0 && !_restSeconds > 0) {
+        setSets((_sets - 1).toString());
+        restartCounter();
       } else {
         restCounter();
       }
