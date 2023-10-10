@@ -59,7 +59,7 @@ function Rest({
         timestamp={formatTime(minutes, seconds)}
       />
       <SoundManager
-        soundFile={require("../../assets/sounds/beep-1.wav")}
+        soundFile={require("../../assets/sounds/beep-1.mp3")}
         playSound={playSound}
       />
     </View>

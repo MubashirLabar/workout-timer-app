@@ -48,7 +48,7 @@ function Playground() {
     setSeconds("");
     setRestMinutes("");
     setRestSeconds("");
-    setSets("");
+    setSets("1");
     setTotalCounter({
       ...totalCounter,
       minutes: "0",
